@@ -53,10 +53,9 @@ Robust (Newey–West / HAC) standard errors are used to account for common issue
 
 ## 📁 Repository Structure
 
-├── basic_economic_forecast_using_multiple_regression.ipynb
-├── README.md
-├── LICENSE
-└── .gitignore
+* basic_economic_forecast_using_multiple_regression.ipynb
+* README.md
+* LICENSE
 
 ---
 
