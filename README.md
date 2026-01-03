@@ -7,6 +7,7 @@ This repository accompanies the blog post:
 **“How to Create Your Own Basic Economic Forecast Using Multiple Regression in Python”**
 
 ![Python](https://img.shields.io/badge/python-3.9%2B-blue)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1VqZmMV2DRFsTw7Ed42U9qfBN0lMiCevm?usp=sharing)
 ![Jupyter Notebook](https://img.shields.io/badge/jupyter-notebook-orange)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
@@ -39,23 +40,39 @@ The goal is **clarity, intuition, and better decision-making**.
 
 ## 🧠 Model Concept
 
-Conceptually, the model estimates:
-Consumer Spending = f(Income, Interest Rates, Inflation)
+Conceptually, the model estimates the "tug-of-war" between five economic forces: **Consumer Spending = f(Income, Sentiment, Inflation, Rates, Unemployment)**
 
-In practice, the notebook models **growth in real consumer spending** using:
-- Real disposable personal income growth
-- Inflation (year-over-year)
-- The federal funds rate
+In practice, the notebook forecasts Real Personal Consumption Expenditures (PCE) using:
+
+* Real Disposable Personal Income: "The Fuel" (Positive Driver)
+* Consumer Sentiment (UMCSENT): "The Psychology" (Positive Driver)
+* Inflation (CPI): "The Friction" (Negative Drag)
+* Federal Funds Rate: "The Brake" (Negative Drag)
+* Unemployment Rate: "The Fear Factor" (Negative Drag)
 
 Robust (Newey–West / HAC) standard errors are used to account for common issues in macroeconomic time series data.
 
 ---
 
-## 📁 Repository Structure
+## 📁 Repository Files
 
-* basic_economic_forecast_using_multiple_regression.ipynb
+* (Main forecast notebook) basic_economic_forecast_using_multiple_regression.ipynb
+* (OPTIONAL notebook to create article plots) Optional_Economic_Forecast_Plots_for_the_article.ipynb
+* (OPTIONAL saved dataset used for article) my_economic_forecast_data.csv
 * README.md
 * LICENSE
+
+---
+
+## 👨🏻‍💻 Reproducibility & Data Integrity
+This analysis was originally generated on **January 3, 2026.**
+
+Because this project relies on live economic data from the Federal Reserve (FRED), results generated in the future may differ slightly due to official government data revisions and updates.
+
+To ensure reproducibility, I have included a "Time Capsule" of the raw data used for the article.
+
+* **Live Mode (Default**): The notebook is set to pull the most current data from the FRED API. This ensures the forecast uses the latest available information.
+* **Static Mode (Reproducible)**: To reproduce the exact results found in the article, you can load the provided snapshot file (my_economic_forecast_data.csv) instead of querying the API.
 
 ---
 
