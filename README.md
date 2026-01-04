@@ -4,7 +4,7 @@ A hands-on Python example showing how to build a **basic, interpretable economic
 
 This repository accompanies the blog post:
 
-**“How to Create Your Own Basic Economic Forecast Using Multiple Regression in Python”**
+**[How to Create Your Own Basic Economic Forecast Using Multiple Regression in Python](https://blog.marketingdatascience.ai/how-to-create-your-own-basic-economic-forecast-using-multiple-regression-in-python-35c09bb9e6b3)**
 
 ![Python](https://img.shields.io/badge/python-3.9%2B-blue)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1VqZmMV2DRFsTw7Ed42U9qfBN0lMiCevm?usp=sharing)
